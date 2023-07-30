@@ -15,8 +15,7 @@ const RegisterPage = () => {
   });
 
   const handleChange = (e) => {
-    const value =
-      e.target.type === "checkbox" ? e.target.checked : e.target.value;
+    const value = e.target.value;
     const name = e.target.name;
     setFormFields((values) => ({ ...values, [name]: value }));
   };
